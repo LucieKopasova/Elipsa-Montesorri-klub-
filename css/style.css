@@ -1,0 +1,437 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  width: auto;
+}
+
+.menu {
+  font-family: "Lato", sans-serif;
+  color: #046175;
+  text-align: right;
+}
+
+.menu p {
+  margin: 0 0 10px 0;
+}
+
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.menu__toggler {
+  cursor: pointer;
+}
+
+.menu__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: white;
+}
+
+.menu__item {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.menu__link {
+  display: block;
+  color: #046175;
+  padding: 15px;
+  text-decoration: none;
+  min-width: 120px;
+}
+
+.dropdown-content {
+  padding-left: 50px;
+}
+
+.menu__item:hover {
+  background-color: rgb(224, 222, 222);
+}
+
+.menu__link:hover ~ .dropdown-content {
+  background-color: rgb(224, 222, 222);
+}
+
+@media screen and (max-width: 819px) {
+  .menu {
+    width: 240px;
+    font-size: 20px;
+  }
+  .menu__list {
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    width: 210px;
+  }
+  .menu__checkbox:checked ~ .menu__list {
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 820px) {
+  .menu {
+    font-size: 28px;
+  }
+  .menu__toggler {
+    display: none;
+  }
+  .menu__list {
+    display: flex;
+    text-align: left;
+  }
+  .menu__item {
+    border-bottom: 0px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border: none;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-left: 15px;
+    width: 100%;
+    font-size: 18px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footer {
+  background-color: #FAB100;
+  height: 145px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+}
+
+.footer__navigace {
+  display: flex;
+}
+
+.footer__kontakt {
+  display: flex;
+}
+
+.footer__ikona {
+  margin: 10px;
+}
+
+.footer__socsiti {
+  display: flex;
+}
+
+@media screen and (max-width: 639px) {
+  .footer {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .footer__navigace {
+    display: none;
+  }
+  .footer__kontakt {
+    order: -1;
+  }
+  .footer__ikona {
+    width: 35px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .footer {
+    justify-content: space-around;
+  }
+}
+/* -----hodnoty-------------------------------- */
+.hodnoty {
+  padding-bottom: 30px;
+  background-image: url(/images/obsah-pozadi3.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.hodnoty__pozadi {
+  width: 80%;
+  margin: 40px auto 0;
+}
+
+.hodnoty__nadpis {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+
+.hodnoty__seznam {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 10%;
+}
+
+@media screen and (min-width: 640px) {
+  .hodnoty__pozadi {
+    position: relative;
+    height: 300px;
+    width: 750px;
+    margin-top: 80px;
+    background-image: url(/images/Elipsa.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .hodnoty {
+    padding-bottom: 70px;
+  }
+  .hodnoty__nadpis {
+    font-size: 36px;
+    display: block;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+  .hodnoty__seznam {
+    display: block;
+    list-style: none;
+    font-size: 24px;
+  }
+  .hodnoty__1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 30px;
+  }
+  .hodnoty__2 {
+    position: absolute;
+    left: 680px;
+    top: 70px;
+  }
+  .hodnoty__3 {
+    position: absolute;
+    left: 680px;
+    top: 210px;
+  }
+  .hodnoty__4 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 1px;
+  }
+  .hodnoty__5 {
+    position: absolute;
+    right: 680px;
+    top: 210px;
+  }
+  .hodnoty__6 {
+    position: absolute;
+    right: 680px;
+    top: 70px;
+  }
+}
+.kontakni-informace {
+  display: none;
+}
+
+.oteviraci-doba {
+  width: 220px;
+  margin: 60px auto 40px;
+}
+
+.oteviraci-doba__nadpis {
+  font-size: 16px;
+}
+
+.oteviraci-doba__tabulka--cas {
+  padding-left: 20px;
+}
+
+.oteviraci-doba__header {
+  display: flex;
+}
+
+.ikona__navigace,
+.ikona__tel,
+.ikona__mail,
+.ikona__hodiny {
+  margin: 10px;
+}
+
+@media screen and (max-width: 639px) {
+  .oteviraci-doba__tabulka {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 640px) {
+  .kontakty__uvodni-strana {
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    font-size: 20px;
+  }
+  .kontakni-informace {
+    display: block;
+    margin: auto;
+  }
+  .oteviraci-doba {
+    width: 320px;
+  }
+  .oteviraci-doba__nadpis {
+    font-size: 24px;
+  }
+}
+.nadpis__pozadi {
+  background-image: url(/images/nadpis_pozadi.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 60px;
+}
+
+@media screen and (min-width: 820px) {
+  .nadpis__pozadi {
+    height: 155px;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  color: #046175;
+  font-size: 24px;
+  margin: 0;
+  padding: 5px 0 0 30px;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  color: #0FBADF;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 820px) {
+  h1 {
+    font-size: 48px;
+    padding: 15px 0 0 90px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
+/* -----Start Glide-------------------------------- */
+.glide__slide img {
+  width: 100%;
+}
+
+/* -----Kdo jsme ----------------------------- */
+.kdojsme__image {
+  width: 220px;
+  height: 180px;
+  border-radius: 70px 10px 70px 10px;
+  background-image: url(/images/Napis\ Elipsa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  grid-row: 2/3;
+  margin: auto;
+}
+
+.kdojsme__obsah {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+.kdojsme__obsah > p {
+  margin: 30px;
+}
+
+.kdojsme__obsah > h2 {
+  margin-left: 30px;
+}
+
+.montesorri__image {
+  width: 220px;
+  height: 180px;
+  border-radius: 10px 70px 10px 70px;
+  background-image: url(/images/devce\ a\ konvicka.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  grid-row: 2/3;
+  margin: auto;
+}
+
+.montesorri__obsah {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+.montesorri__obsah > p {
+  margin: 30px;
+}
+
+.montesorri__obsah > h2 {
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 820px) {
+  .kdojsme {
+    margin: 0 120px 70px 120px;
+  }
+  .kdojsme__obsah {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+  }
+  .kdojsme__image {
+    grid-row: 1/-1;
+    min-width: 400px;
+    height: 100%;
+  }
+  .montesorri {
+    margin: 0 120px 70px 120px;
+  }
+  .montesorri__obsah {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+  }
+  .montesorri__image {
+    grid-row: 1/-1;
+    grid-column: 2/-1;
+    min-width: 400px;
+    height: 100%;
+  }
+}
+/* -----Kdo jsme ----------------------------- *//*# sourceMappingURL=style.css.map */

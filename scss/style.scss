@@ -1,0 +1,144 @@
+@use "desing";
+@use "header";
+@use "footer";
+@use "hodnoty";
+@use "pozadi-nadpisy";
+
+// desing.$c-primary: #046175;
+// desing.$c-secondary:#0FBADF;
+// desing.$c-footer: #FAB100;
+// desing.$c-shadow: rgba(0, 0, 0, 0.3);
+// desing.$font-nadpis:"Pacifico", cursive;
+// desing.$font-text:"Lato", sans-serif;
+
+// intuitivnejsi box-sizing
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: desing.$font-text;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1 {
+  font-family: desing.$font-nadpis;
+  color: desing.$c-primary;
+  font-size: 24px;
+  margin: 0;
+  padding: 5px 0 0 30px;
+}
+
+h2 {
+  font-family: desing.$font-text;
+  color: desing.$c-secondary;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 820px) {
+  h1 {
+    font-size: 48px;
+    padding: 15px 0 0 90px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
+
+/* -----Start Glide-------------------------------- */
+.glide__slide img {
+  width: 100%;
+}
+
+/* -----Kdo jsme ----------------------------- */
+
+.kdojsme__image {
+  width: 220px;
+  height: 180px;
+  border-radius: 70px 10px 70px 10px;
+  background-image: url(/images/Napis\ Elipsa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  grid-row: 2 / 3;
+  margin: auto;
+}
+
+.kdojsme__obsah {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+.kdojsme__obsah > p {
+  margin: 30px;
+}
+
+.kdojsme__obsah > h2 {
+  margin-left: 30px;
+}
+
+.montesorri__image {
+  width: 220px;
+  height: 180px;
+  border-radius: 10px 70px 10px 70px;
+  background-image: url(/images/devce\ a\ konvicka.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  grid-row: 2 / 3;
+  margin: auto;
+}
+
+.montesorri__obsah {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+.montesorri__obsah > p {
+  margin: 30px;
+}
+
+.montesorri__obsah > h2 {
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 820px) {
+  .kdojsme {
+    margin: 0 120px 70px 120px;
+  }
+  .kdojsme__obsah {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .kdojsme__image {
+    grid-row: 1/-1;
+    min-width: 400px;
+    height: 100%;
+  }
+
+  .montesorri {
+    margin: 0 120px 70px 120px;
+  }
+
+  .montesorri__obsah {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .montesorri__image {
+    grid-row: 1/-1;
+    grid-column: 2/-1;
+    min-width: 400px;
+    height: 100%;
+  }
+}
+/* -----Kdo jsme ----------------------------- */
+

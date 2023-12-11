@@ -1,0 +1,155 @@
+@use "desing";
+
+/* -----hodnoty-------------------------------- */
+
+.hodnoty {
+  padding-bottom: 30px;
+  background-image: url(/images/obsah-pozadi3.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.hodnoty__pozadi {
+  width: 80%;
+  margin: 40px auto 0;
+}
+
+.hodnoty__nadpis {
+  text-align: center;
+  font-family: desing.$font-nadpis;
+}
+
+.hodnoty__seznam {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 10%;
+}
+
+@media screen and (min-width: 640px) {
+  .hodnoty__pozadi {
+    position: relative;
+    height: 300px;
+    width: 750px;
+    margin-top: 80px;
+    background-image: url(/images/Elipsa.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hodnoty {
+    padding-bottom: 70px;
+  }
+
+  .hodnoty__nadpis {
+    font-size: 36px;
+    display: block;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  .hodnoty__seznam {
+    display: block;
+    list-style: none;
+    font-size: 24px;
+  }
+
+  .hodnoty__1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 30px;
+  }
+
+  .hodnoty__2 {
+    position: absolute;
+    left: 680px;
+    top: 70px;
+  }
+
+  .hodnoty__3 {
+    position: absolute;
+    left: 680px;
+    top: 210px;
+  }
+
+  .hodnoty__4 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 1px;
+  }
+
+  .hodnoty__5 {
+    position: absolute;
+    right: 680px;
+    top: 210px;
+  }
+
+  .hodnoty__6 {
+    position: absolute;
+    right: 680px;
+    top: 70px;
+  }
+}
+
+.kontakni-informace {
+  display: none;
+}
+.oteviraci-doba {
+  width: 220px;
+  margin: 60px auto 40px;
+}
+
+.oteviraci-doba__nadpis {
+  font-size: 16px;
+}
+
+.oteviraci-doba__tabulka--cas {
+  padding-left: 20px;
+}
+
+.oteviraci-doba__header {
+  display: flex;
+}
+
+.ikona__navigace,
+.ikona__tel,
+.ikona__mail,
+.ikona__hodiny {
+  margin: 10px;
+}
+
+@media screen and (max-width: 639px) {
+  .oteviraci-doba__tabulka {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 640px) {
+
+  .kontakty__uvodni-strana {
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    font-size: 20px;
+  }
+
+  .kontakni-informace {
+    display: block;
+    margin: auto;
+  }
+
+  .oteviraci-doba {
+    width: 320px;}
+
+    .oteviraci-doba__nadpis {
+      font-size: 24px;
+    }
+
+}

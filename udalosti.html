@@ -1,0 +1,19 @@
+---
+layout: layouts/stranka.njk
+title: Události
+---
+
+<h1>Co je u nás nového</h1>
+
+{% for prispevek in collections.blog | reverse %}
+
+<div class="clanek">
+    <img src="/images/{{prispevek.data.foto}}" alt="{{prispevek.data.alt}}">
+      <div class="clanek__popis">
+    <h2>{{ prispevek.data.title }}</h2>
+    <p>{{ prispevek.data.perex }}</p>
+    <p><a href="{{ prispevek.url }}">celý článek</a></p>
+  </div>
+</div>
+
+{% endfor %}

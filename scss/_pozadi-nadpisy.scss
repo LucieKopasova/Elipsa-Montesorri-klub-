@@ -1,0 +1,15 @@
+@use "desing";
+
+.nadpis__pozadi {
+  background-image: url(/images/nadpis_pozadi.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 60px;
+}
+
+@media screen and (min-width: 820px) {
+  .nadpis__pozadi {
+    height: 155px;}
+  
+  }
