@@ -10,6 +10,7 @@
 // desing.$c-shadow: rgba(0, 0, 0, 0.3);
 // desing.$font-nadpis:"Pacifico", cursive;
 // desing.$font-text:"Lato", sans-serif;
+// desing.$bocni-okraj:30px;
 
 // intuitivnejsi box-sizing
 html {
@@ -41,6 +42,12 @@ h2 {
   font-size: 20px;
 }
 
+h4 {
+  font-family: desing.$font-text;
+  color: desing.$c-secondary;
+  font-size: 20px;
+}
+
 @media screen and (min-width: 820px) {
   h1 {
     font-size: 48px;
@@ -49,6 +56,10 @@ h2 {
   h2 {
     font-size: 32px;
   }
+}
+
+section {
+  margin: desing.$bocni-okraj;
 }
 
 /* -----Start Glide-------------------------------- */
@@ -75,14 +86,6 @@ h2 {
   grid-template-rows: repeat(3, auto);
 }
 
-.kdojsme__obsah > p {
-  margin: 30px;
-}
-
-.kdojsme__obsah > h2 {
-  margin-left: 30px;
-}
-
 .montesorri__image {
   width: 220px;
   height: 180px;
@@ -101,10 +104,6 @@ h2 {
 }
 .montesorri__obsah > p {
   margin: 30px;
-}
-
-.montesorri__obsah > h2 {
-  margin-left: 30px;
 }
 
 @media screen and (min-width: 820px) {
@@ -141,4 +140,71 @@ h2 {
   }
 }
 /* -----Kdo jsme ----------------------------- */
+.druha-polovina-stranky{
+  position: relative;
+}
 
+.nastym {
+  padding-bottom: 30px;
+}
+
+.nadpis__pozadi2 {
+  background-image: url(/images/obsah-pozadi2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 300px;
+  position: absolute;
+  left: -8px;
+  z-index: 2;
+
+}
+
+.nastym__vizitka {
+  position: relative;
+  width: 320px;
+  height: 206px;
+  margin-top: 30px;
+}
+
+.nastym__photo {
+  border-radius: 70px 10px 70px 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.nastym__karta {
+  border: 1px dotted desing.$c-primary;
+  border-radius: 70px 0 30px 0;
+  width: 320px;
+  height: 100%;
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  padding-left: 30%;
+  padding-top: 5%;
+}
+
+.nastym__profil {
+  text-align: center;
+  width: 100%;
+}
+
+.nastym__profil > p {
+  margin: 0;
+}
+
+.nastym__profil > h4 {
+  margin: 30px auto 20px;
+}
+
+
+@media screen and (min-width: 820px) {
+  .nastym {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: auto auto;
+  }
+}

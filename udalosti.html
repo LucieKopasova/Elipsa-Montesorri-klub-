@@ -1,19 +1,18 @@
 ---
 layout: layouts/stranka.njk
-title: Události
+title: Co je u nás nového
 ---
 
-<h1>Co je u nás nového</h1>
+<div class="udalosti__karta">
+  <div class="udalosti__popis">
+    <h4>Pod pokličkou</h4>
+    <h5>31.7-4.8.2024</h5>
 
-{% for prispevek in collections.blog | reverse %}
-
-<div class="clanek">
-    <img src="/images/{{prispevek.data.foto}}" alt="{{prispevek.data.alt}}">
-      <div class="clanek__popis">
-    <h2>{{ prispevek.data.title }}</h2>
-    <p>{{ prispevek.data.perex }}</p>
-    <p><a href="{{ prispevek.url }}">celý článek</a></p>
+    <p>I letos si děti mohou užít leto plné zabavy v našem přímetském táboře</p>
   </div>
+  <img
+class="udalosti__obrazek"
+src="/akce/akce 1.jpg"
+alt="Událost pod pokličkou"
+/>
 </div>
-
-{% endfor %}
