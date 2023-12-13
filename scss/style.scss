@@ -7,7 +7,7 @@
 @use "onas";
 @use "projekty";
 @use "kontakt";
-@use 'udalosti';
+@use "udalosti";
 
 // desing.$c-primary: #046175;
 // desing.$c-secondary:#0FBADF;
@@ -69,6 +69,47 @@ section {
   margin: desing.$bocni-okraj;
 }
 
-/* ------------události------------------------ */
+/* ------------událost------------------------ */
 
-.
+.novinky {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.udalosti__karta--novinky {
+  min-width: 305px;
+  min-height: 430px;
+  place-self: center;
+}
+
+.udalosti__obrazek--novinky {
+  min-width: 305px;
+  min-height: 430px;
+}
+
+@media screen and (min-width: 820px) {
+
+  .udalosti__karta--novinky {
+    min-width: 830px;
+    min-height: 1170px;
+  }
+  
+  .udalosti__obrazek--novinky {
+    min-width: 830px;
+    min-height: 1170px;
+  }
+  
+  .udalosti__popis--novinky>p{
+    font-size: 18px;
+  }
+
+  .udalosti__popis--novinky>h5{
+    font-size: 16px;
+  }
+
+  .udalosti__popis--novinky>h4{
+    font-size: 24px;
+  }
+
+
+}

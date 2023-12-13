@@ -397,55 +397,34 @@ header {
     height: 100%;
   }
 }
-/* -----Kdo jsme ----------------------------- */
-.nastym {
-  padding-bottom: 30px;
+/* -----tym---------------------------- */
+.tym {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
 }
 
-.nastym__vizitka {
-  position: relative;
-  width: 320px;
-  height: 206px;
-  margin: 30px;
-}
-
-.nastym__photo {
+.tym__photo {
   border-radius: 70px 10px 70px 10px;
   position: absolute;
+  bottom: 0;
   left: 0;
-  bottom: 0;
-  z-index: 1;
 }
 
-.nastym__karta {
-  border: 1px dotted #046175;
-  border-radius: 70px 0 30px 0;
-  width: 320px;
-  height: 100%;
-  position: absolute;
-  left: 40%;
-  bottom: 0;
-  padding-left: 30%;
-  padding-top: 5%;
-}
-
-.nastym__profil {
-  text-align: center;
-  width: 100%;
-  margin: 10px;
-}
-
-.nastym__profil > p {
+.tym__figure {
+  border: 1px dotted black;
+  position: relative;
+  text-align: right;
+  padding: 10px;
+  width: 400px;
+  height: 206px;
+  border-radius: 70px 0 30px 10px;
   margin: 0;
 }
 
-.nastym__profil > h4 {
-  margin: 30px auto 20px;
-}
-
-.nastym__viziky {
-  display: grid;
-  grid-template-columns: 1fr;
+.tym__profil {
+  display: inline-block;
+  text-align: center;
 }
 
 @media screen and (min-width: 820px) {
@@ -713,59 +692,39 @@ section {
   margin: 30px;
 }
 
-/* ------------události------------------------ */
-.udalosti__karta {
-  width: 290px;
-}
-
-.udalosti__popis {
-  text-align: center;
-  border: 1px dotted #046175;
-  border-radius: 10px 70px 0 0;
-  padding: 18px;
-}
-
-.udalosti__obrazek {
-  height: 160px;
-  width: 100%;
-  border-radius: 0 0 10px 70px;
-  background-color: #FAB100;
-  border: 1px solid #FAB100;
-  background-image: url(/images/akce/akce\ 1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
-.udalosti__popis > h4,
-.udalosti__popis > p {
-  margin: 0;
-}
-
-.udalosti__popis > h5 {
-  margin: 10px;
-  font-size: 14px;
-}
-
-.udalosti__popis > p {
-  font-size: 16px;
-}
-
-.udalosti {
+/* ------------událost------------------------ */
+.novinky {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
 }
 
-.archiv__udalosti {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
+.udalosti__karta--novinky {
+  min-width: 305px;
+  min-height: 430px;
+  place-self: center;
+}
+
+.udalosti__obrazek--novinky {
+  min-width: 305px;
+  min-height: 430px;
 }
 
 @media screen and (min-width: 820px) {
-  .archiv__udalosti,
-  .udalosti {
-    grid-template-columns: repeat(4, 1fr);
+  .udalosti__karta--novinky {
+    min-width: 830px;
+    min-height: 1170px;
+  }
+  .udalosti__obrazek--novinky {
+    min-width: 830px;
+    min-height: 1170px;
+  }
+  .udalosti__popis--novinky > p {
+    font-size: 18px;
+  }
+  .udalosti__popis--novinky > h5 {
+    font-size: 16px;
+  }
+  .udalosti__popis--novinky > h4 {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
