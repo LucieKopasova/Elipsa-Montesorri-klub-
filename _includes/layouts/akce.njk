@@ -1,0 +1,32 @@
+---
+layout: layouts/hlavni-sablona.njk
+---
+
+<!-- vložíme hlavičku stránky -->
+{% include 'partials/header.njk' %}
+
+<!-- vložíme nadpis pozadi -->
+{% include 'partials/nadpis.njk' %}
+
+<main class="main">
+
+	<section class="udalosti novinky">
+		<div class="udalosti__karta udalosti__karta--novinky">
+		  <div class="udalosti__popis udalosti__popis--novinky">
+			<h4>{{ title }}</h4>
+			<h5>{{ konani }}</h5>
+	  
+			<p>
+			  {{ perex }}
+			</p>
+		  </div>
+	  
+		  <div class="udalosti__obrazek udalosti__obrazek--novinky"></div>
+		</div>
+	  </section>
+
+</main>
+
+
+<!-- vložíme patičku stránky -->
+{% include 'partials/footer.njk' %}

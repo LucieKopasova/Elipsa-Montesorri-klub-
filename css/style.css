@@ -643,6 +643,42 @@ header {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+/* ------------akce------------------------ */
+.novinky {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.udalosti__karta--novinky {
+  min-width: 305px;
+  min-height: 430px;
+  place-self: center;
+}
+
+.udalosti__obrazek--novinky {
+  min-width: 305px;
+  min-height: 430px;
+}
+
+@media screen and (min-width: 820px) {
+  .udalosti__karta--novinky {
+    min-width: 830px;
+    min-height: 1170px;
+  }
+  .udalosti__obrazek--novinky {
+    min-width: 830px;
+    min-height: 1170px;
+  }
+  .udalosti__popis--novinky > p {
+    font-size: 18px;
+  }
+  .udalosti__popis--novinky > h5 {
+    font-size: 16px;
+  }
+  .udalosti__popis--novinky > h4 {
+    font-size: 24px;
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -692,39 +728,11 @@ section {
   margin: 30px;
 }
 
-/* ------------událost------------------------ */
-.novinky {
+.galerie {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, 90px);
 }
 
-.udalosti__karta--novinky {
-  min-width: 305px;
-  min-height: 430px;
-  place-self: center;
-}
-
-.udalosti__obrazek--novinky {
-  min-width: 305px;
-  min-height: 430px;
-}
-
-@media screen and (min-width: 820px) {
-  .udalosti__karta--novinky {
-    min-width: 830px;
-    min-height: 1170px;
-  }
-  .udalosti__obrazek--novinky {
-    min-width: 830px;
-    min-height: 1170px;
-  }
-  .udalosti__popis--novinky > p {
-    font-size: 18px;
-  }
-  .udalosti__popis--novinky > h5 {
-    font-size: 16px;
-  }
-  .udalosti__popis--novinky > h4 {
-    font-size: 24px;
-  }
+.photo {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
