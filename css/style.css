@@ -728,11 +728,23 @@ section {
   margin: 30px;
 }
 
+.archiv {
+  margin-bottom: 0;
+}
+
 .galerie {
   display: grid;
   grid-template-columns: repeat(auto-fill, 90px);
+  gap: 10px;
+  margin-top: 0px;
 }
 
 .photo {
   width: 100%;
+}
+
+@media screen and (min-width: 820px) {
+  .galerie {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
 }/*# sourceMappingURL=style.css.map */
