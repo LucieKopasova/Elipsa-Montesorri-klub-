@@ -3,48 +3,122 @@ layout: layouts/stranka.njk
 title: Kontakt
 ---
 
+<section class="kontakt">
+  <article class="kontakt__obsah">
+    <h4>Elipsa Montesorri klub</h4>
+    <div class="kontakni-informace">
+      <table class="kontakni-informace__tabulka">
+        <tr>
+          <td>
+            <img
+              class="kontakni-informace__ikona ikona__navigace"
+              src="/images/Navigace-modra.svg"
+              alt="ikona navigace"
+            />
+          </td>
+          <td>Školní 195, Praha 4 - Braník</td>
+        </tr>
 
-<h2>Elipsa Montesorri klub</h2>
-<div class="kontakni-informace">
-    <table class="kontakni-informace__tabulka">
-      <tr>
-        <td>
-          <img
-            class="kontakni-informace__ikona ikona__navigace"
-            src="/images/Navigace-modra.svg"
-            alt="ikona navigace"
-          />
-        </td>
-        <td>Školní 195, Praha 4 - Braník</td>
-      </tr>
+        <tr>
+          <td>
+            <img
+              class="kontakni-informace__ikona ikona__tel"
+              src="/images/tel-modra.svg"
+              alt="ikona telefonu"
+            />
+          </td>
+          <td>777 314 016</td>
+        </tr>
 
-      <tr>
-        <td>
-          <img
-            class="kontakni-informace__ikona ikona__tel"
-            src="/images/tel-modra.svg"
-            alt="ikona telefonu"
-          />
-        </td>
-        <td>777 314 016</td>
-      </tr>
+        <tr>
+          <td>
+            <img
+              class="kontakni-informace__ikona ikona__mail"
+              src="/images/mail-modra.svg"
+              alt="ikona email"
+            />
+          </td>
+          <td>elipsa@zsskolni.cz</td>
+        </tr>
 
-      <tr>
-        <td>
-          <img
-            class="kontakni-informace__ikona ikona__mail"
-            src="/images/mail-modra.svg"
-            alt="ikona email"
-          />
-        </td>
-        <td>elipsa@zsskolni.cz</td>
-      </tr>
-    </table>
-  </div>
+        <tr>
+          <td>
+            <img
+              class="kontakni-informace__ikona ikona__hodiny"
+              src="/images/hodiny.svg"
+              alt="ikona hodiny"
+            />
+          </td>
+          <td>Po-Pá: 8:00 - 16:00</td>
+        </tr>
 
-  <img
-src="/images/mapa.JPG"
-alt="mapa"
-/>
+        <tr>
+          <td>
+            <img
+              class="kontakni-informace__ikona ikona__fb"
+              src="/images/fb-modra.svg"
+              alt="ikona fb"
+            />
+          </td>
+          <td>
+            <img
+              class="kontakni-informace__ikona ikona__insta"
+              src="/images/insta-modra.svg"
+              alt="ikona insta"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </article>
 
+  <img class="kontakt__mapa" src="/images/mapa.JPG" alt="mapa" />
+</section>
+
+<section class="formular">
   <h1>Máte dotaz?</h1>
+
+  <form class="form" action="http://formular.itgirls.cs" method="post">
+    <div class="form-fied">
+      <label for="jmeno">Jméno a Příjmení<span class="form-fied-required">*</span></label>
+      <input
+        type="text"
+        name="jmeno"
+        id="jmeno"
+        placeholder="Jméno a Příjmení"
+        autofocus
+        required
+      />
+    </div>
+
+    <div class="form-fied">
+      <label for="telefon">Telefon<span class="form-fied-required">*</span></label>
+      <input
+        type="tel"
+        name="telefon"
+        id="telefon"
+        placeholder="+420 XXXXXXXXX"
+        required
+        maxlength="14"
+      />
+    </div>
+
+    <div class="form-fied">
+      <label for="email">Email<span class="form-fied-required">*</span></label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        autofocus
+        required
+      />
+    </div>
+    <div class="form-fied form-fied__textarea ">
+      <label for="zprava">Zpráva</label>
+      <textarea name="zprava" id="zprava"  rows="10"></textarea>
+    </div>
+
+    <button class="form-fied__button" type="submit">Odeslat</button>
+  </form>
+</section>

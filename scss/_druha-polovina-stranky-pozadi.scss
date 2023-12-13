@@ -1,0 +1,19 @@
+@use "desing";
+
+/* -----druha polovina stranky pozadi ----------------------------- */
+.nadpis__pozadi2 {
+    background-image: url(/images/obsah-pozadi2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    left: -1px;
+    position: absolute;
+    top: 0;
+  }
+
+  .druha-polovina-stranky {
+    position: relative;
+    padding-top: 30px;
+  }
+  

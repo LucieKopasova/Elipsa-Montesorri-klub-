@@ -1,0 +1,56 @@
+@use "desing";
+
+.udalosti__karta {
+  width: 290px;
+}
+
+.udalosti__popis {
+  text-align: center;
+  border: 1px dotted desing.$c-primary;
+  border-radius: 10px 70px 0 0;
+  padding: 18px;
+}
+
+.udalosti__obrazek {
+  height: 160px;
+  width: 100%;
+  border-radius: 0 0 10px 70px;
+  background-color: desing.$c-footer;
+  border: 1px solid desing.$c-footer;
+  background-image: url(/images/akce/akce\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.udalosti__popis > h4,
+.udalosti__popis > p {
+  margin: 0;
+}
+.udalosti__popis > h5 {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.udalosti__popis > p {
+  font-size: 16px;
+}
+
+.udalosti {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.archiv__udalosti {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media screen and (min-width: 820px) {
+  .archiv__udalosti,
+  .udalosti {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

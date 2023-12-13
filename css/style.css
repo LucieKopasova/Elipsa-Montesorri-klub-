@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   display: flex;
   justify-content: space-between;
@@ -113,6 +114,11 @@ header {
     align-items: center;
   }
 }
+/* -----Start Glide-------------------------------- */
+.glide__slide img {
+  width: 100%;
+}
+
 .footer {
   background-color: #FAB100;
   height: 145px;
@@ -310,6 +316,354 @@ header {
     height: 155px;
   }
 }
+/* -----druha polovina stranky pozadi ----------------------------- */
+.nadpis__pozadi2 {
+  background-image: url(/images/obsah-pozadi2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  left: -1px;
+  position: absolute;
+  top: 0;
+}
+
+.druha-polovina-stranky {
+  position: relative;
+  padding-top: 30px;
+}
+
+/* -----Kdo jsme ----------------------------- */
+.kdojsme__image {
+  width: 220px;
+  height: 180px;
+  border-radius: 70px 10px 70px 10px;
+  background-image: url(/images/Napis\ Elipsa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  grid-row: 2/3;
+  margin: auto;
+}
+
+.kdojsme__obsah {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+.montesorri__image {
+  width: 220px;
+  height: 180px;
+  border-radius: 10px 70px 10px 70px;
+  background-image: url(/images/devce\ a\ konvicka.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  grid-row: 2/3;
+  margin: auto;
+}
+
+.montesorri__obsah {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+@media screen and (min-width: 820px) {
+  .kdojsme {
+    margin: 0 120px 70px 120px;
+  }
+  .kdojsme__obsah {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+  }
+  .kdojsme__image {
+    grid-row: 1/-1;
+    min-width: 400px;
+    height: 100%;
+  }
+  .montesorri {
+    margin: 0 120px 70px 120px;
+  }
+  .montesorri__obsah {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+  }
+  .montesorri__image {
+    grid-row: 1/-1;
+    grid-column: 2/-1;
+    min-width: 400px;
+    height: 100%;
+  }
+}
+/* -----Kdo jsme ----------------------------- */
+.nastym {
+  padding-bottom: 30px;
+}
+
+.nastym__vizitka {
+  position: relative;
+  width: 320px;
+  height: 206px;
+  margin: 30px;
+}
+
+.nastym__photo {
+  border-radius: 70px 10px 70px 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.nastym__karta {
+  border: 1px dotted #046175;
+  border-radius: 70px 0 30px 0;
+  width: 320px;
+  height: 100%;
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  padding-left: 30%;
+  padding-top: 5%;
+}
+
+.nastym__profil {
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.nastym__profil > p {
+  margin: 0;
+}
+
+.nastym__profil > h4 {
+  margin: 30px auto 20px;
+}
+
+.nastym__viziky {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 820px) {
+  .nastym__viziky {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ------------Projekty------------------------ */
+.skolka__image {
+  width: 220px;
+  height: 180px;
+  border-radius: 70px 10px 70px 10px;
+  background-image: url(/images/dětská\ skupina.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  grid-row: 2/3;
+  margin: auto;
+}
+
+.skolka__obsah {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+.pracovny__image {
+  width: 220px;
+  height: 180px;
+  border-radius: 10px 70px 10px 70px;
+  background-image: url(/images/devce\ a\ konvicka.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  grid-row: 2/3;
+  margin: auto;
+  z-index: 1;
+}
+
+.pracovny__obsah {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+@media screen and (min-width: 820px) {
+  .skolka {
+    margin: 0 120px 70px 120px;
+  }
+  .skolka__obsah {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+  }
+  .skolka__image {
+    grid-row: 1/-1;
+    min-width: 400px;
+    height: 100%;
+  }
+  .pracovny {
+    margin: 0 120px 70px 120px;
+  }
+  .pracovny__obsah {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+  }
+  .pracovny__image {
+    grid-row: 1/-1;
+    grid-column: 2/-1;
+    min-width: 400px;
+    height: 100%;
+  }
+}
+/* ------------kontakt------------------------ */
+.kontakt__mapa {
+  border-radius: 10px 70px 10px 70px;
+}
+
+.kontakt__obsah {
+  text-align: center;
+}
+
+@media screen and (min-width: 820px) {
+  .kontakt {
+    display: flex;
+  }
+}
+/* ------------form------------------------ */
+.form {
+  width: 100%;
+  max-width: 305px;
+  display: grid;
+  grid-template-columns: auto;
+  margin: auto;
+  gap: 10px;
+}
+
+.form-fied label {
+  display: block;
+  font-size: 16px;
+  color: #046175;
+}
+
+.form-fied textarea,
+.form-fied input {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #f1eeee;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  border: 1px solid #f1eeee;
+  padding: 10px;
+}
+
+.form-fied textarea:hover,
+.form-fied input:hover {
+  background-color: white;
+}
+
+.form-fied textarea:focus,
+.form-fied input:focus {
+  outline: 0;
+  background-color: #d8d5d5;
+}
+
+.form-fied__button:active,
+.form-fied__button:hover,
+.form-fied__button:focus {
+  background-color: #033946;
+}
+
+.form-fied input {
+  height: 40px;
+}
+
+.form-fied__button {
+  display: block;
+  background-color: #046175;
+  color: white;
+  border-radius: 15px;
+  width: 150px;
+  height: 45px;
+  font-size: 20px;
+  justify-self: center;
+  border: 1px solid #046175;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 820px) {
+  .form {
+    width: 100%;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .form-fied__textarea {
+    grid-column: 1/-1;
+  }
+  .form-fied__button {
+    grid-column: -2/-1;
+    justify-self: end;
+  }
+}
+.udalosti__karta {
+  width: 290px;
+}
+
+.udalosti__popis {
+  text-align: center;
+  border: 1px dotted #046175;
+  border-radius: 10px 70px 0 0;
+  padding: 18px;
+}
+
+.udalosti__obrazek {
+  height: 160px;
+  width: 100%;
+  border-radius: 0 0 10px 70px;
+  background-color: #FAB100;
+  border: 1px solid #FAB100;
+  background-image: url(/images/akce/akce\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.udalosti__popis > h4,
+.udalosti__popis > p {
+  margin: 0;
+}
+
+.udalosti__popis > h5 {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.udalosti__popis > p {
+  font-size: 16px;
+}
+
+.udalosti {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.archiv__udalosti {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media screen and (min-width: 820px) {
+  .archiv__udalosti,
+  .udalosti {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -359,143 +713,59 @@ section {
   margin: 30px;
 }
 
-/* -----Start Glide-------------------------------- */
-.glide__slide img {
-  width: 100%;
+/* ------------události------------------------ */
+.udalosti__karta {
+  width: 290px;
 }
 
-/* -----Kdo jsme ----------------------------- */
-.kdojsme__image {
-  width: 220px;
-  height: 180px;
-  border-radius: 70px 10px 70px 10px;
-  background-image: url(/images/Napis\ Elipsa.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  grid-row: 2/3;
-  margin: auto;
-}
-
-.kdojsme__obsah {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-}
-
-.montesorri__image {
-  width: 220px;
-  height: 180px;
-  border-radius: 10px 70px 10px 70px;
-  background-image: url(/images/devce\ a\ konvicka.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  grid-row: 2/3;
-  margin: auto;
-}
-
-.montesorri__obsah {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-}
-
-.montesorri__obsah > p {
-  margin: 30px;
-}
-
-@media screen and (min-width: 820px) {
-  .kdojsme {
-    margin: 0 120px 70px 120px;
-  }
-  .kdojsme__obsah {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(2, auto);
-  }
-  .kdojsme__image {
-    grid-row: 1/-1;
-    min-width: 400px;
-    height: 100%;
-  }
-  .montesorri {
-    margin: 0 120px 70px 120px;
-  }
-  .montesorri__obsah {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(2, auto);
-  }
-  .montesorri__image {
-    grid-row: 1/-1;
-    grid-column: 2/-1;
-    min-width: 400px;
-    height: 100%;
-  }
-}
-/* -----Kdo jsme ----------------------------- */
-.druha-polovina-stranky {
-  position: relative;
-}
-
-.nastym {
-  padding-bottom: 30px;
-}
-
-.nadpis__pozadi2 {
-  background-image: url(/images/obsah-pozadi2.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  height: 300px;
-  position: absolute;
-  left: -8px;
-  z-index: 2;
-}
-
-.nastym__vizitka {
-  position: relative;
-  width: 320px;
-  height: 206px;
-  margin-top: 30px;
-}
-
-.nastym__photo {
-  border-radius: 70px 10px 70px 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.nastym__karta {
-  border: 1px dotted #046175;
-  border-radius: 70px 0 30px 0;
-  width: 320px;
-  height: 100%;
-  position: absolute;
-  left: 40%;
-  bottom: 0;
-  padding-left: 30%;
-  padding-top: 5%;
-}
-
-.nastym__profil {
+.udalosti__popis {
   text-align: center;
-  width: 100%;
+  border: 1px dotted #046175;
+  border-radius: 10px 70px 0 0;
+  padding: 18px;
 }
 
-.nastym__profil > p {
+.udalosti__obrazek {
+  height: 160px;
+  width: 100%;
+  border-radius: 0 0 10px 70px;
+  background-color: #FAB100;
+  border: 1px solid #FAB100;
+  background-image: url(/images/akce/akce\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.udalosti__popis > h4,
+.udalosti__popis > p {
   margin: 0;
 }
 
-.nastym__profil > h4 {
-  margin: 30px auto 20px;
+.udalosti__popis > h5 {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.udalosti__popis > p {
+  font-size: 16px;
+}
+
+.udalosti {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.archiv__udalosti {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 @media screen and (min-width: 820px) {
-  .nastym {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
+  .archiv__udalosti,
+  .udalosti {
+    grid-template-columns: repeat(4, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
