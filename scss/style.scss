@@ -9,6 +9,7 @@
 @use "kontakt";
 @use "udalosti";
 @use "akce";
+@use "galerie";
 
 // desing.$c-primary: #046175;
 // desing.$c-secondary:#0FBADF;
@@ -69,26 +70,37 @@ h4 {
 section {
   margin: desing.$bocni-okraj;
 }
+//--------------------Pro rodiče---------------------------//
 
-//-------------Galerie------------------//
-.archiv {
-  margin-bottom: 0;
-}
-
-.galerie {
+.nabizime {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 90px);
-  gap: 10px;
-  margin-top: 0px;
+  grid-template-columns: 1fr;
 }
-
-.photo {
-  width: 100%;
-}
-
 
 @media screen and (min-width: 820px) {
-  .galerie {
-    grid-template-columns: repeat(auto-fill, 250px);
+  .nabizime {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nabizime__seznam {
+    border-right: 1px solid desing.$c-primary;
+    margin-right: 30px;
+    padding-right: 10px;
+  }
+
+  .program-dne__tabulka {
+    margin-left: 30px;
+    padding-left: 10px;
+  }
+
 }
+
+
+//--------------------ke stažení--------------------------//
+.stahovani__article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+
+}
+.stahovani__article h5{
+    text-align: center;
 }

@@ -1,14 +1,15 @@
-module.exports = function (eleventyConfig) {
-  // Výchozí výstupní složka: _site
+module.exports = function(eleventyConfig) {
 
-  // Zkopírovat images/ do _site/images
-  eleventyConfig.addPassthroughCopy("images");
+	// Výchozí výstupní složka: _site
 
-  // Zkopírovat css/ to _site/css/
-  eleventyConfig.addPassthroughCopy("css");
+	// Zkopírovat images/ do _site/images
+	eleventyConfig.addPassthroughCopy("images");
 
-  // Zkopírovat všechny *.js soubory na stejné umístění do _site
-  eleventyConfig.addPassthroughCopy("**/*.js");
+	// Zkopírovat css/ to _site/css/
+	eleventyConfig.addPassthroughCopy("css");
+
+	// Zkopírovat všechny *.js soubory na stejné umístění do _site
+	eleventyConfig.addPassthroughCopy("js");
 
   return {
     // možné formáty šablon
@@ -18,5 +19,6 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
-  };
+  }
+
 };
