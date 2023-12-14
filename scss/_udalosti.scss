@@ -11,6 +11,12 @@
   padding: 18px;
 }
 
+.udalosti__popis:hover,
+.udalosti__popis:active,
+.udalosti__popis:focus {
+  border: 3px solid desing.$c-secondar;
+}
+
 .udalosti__obrazek {
   height: 160px;
   width: 100%;
@@ -46,6 +52,12 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+}
+
+.udalosti a,
+.archiv a {
+  text-decoration: none;
+  color: black;
 }
 
 @media screen and (min-width: 820px) {
