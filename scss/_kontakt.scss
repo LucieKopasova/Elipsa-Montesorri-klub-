@@ -1,18 +1,44 @@
 @use "desing";
 
 /* ------------kontakt------------------------ */
+.kontakt__uvod {
+  display: grid;
+  grid-template-columns: auto;
+  max-width: 1300px;
+}
 
 .kontakt__mapa {
   border-radius: 10px 70px 10px 70px;
 }
 
 .kontakt__obsah {
+  width: 270px;
+  margin: auto;
+}
+
+.kontakni-informace__ikona-soc-site {
   text-align: center;
 }
 
-@media screen and (min-width: 820px) {
+.kontakni-informace__tabulka--nadpis {
+  text-align: left;
+}
+
+.kontakt__mapa {
+  margin: auto;
+}
+@media screen and (min-width: 640px) {
+  .kontakt__uvod {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
   .kontakt {
     display: flex;
+  }
+
+  .kontakt__mapa {
+    border-radius: 15px 150px 15px 150px;
   }
 }
 
@@ -25,6 +51,11 @@
   grid-template-columns: auto;
   margin: auto;
   gap: 10px;
+}
+
+.formular > h1 {
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .form-fied label {
@@ -81,6 +112,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+  }
+
+  .formular {
+    margin: 0 120px 70px 120px;
   }
 
   .form-fied__textarea {

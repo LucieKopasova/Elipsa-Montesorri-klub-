@@ -27,6 +27,12 @@
   margin-left: 10%;
 }
 
+.ikona__navigace,
+.ikona__tel,
+.ikona__mail,
+.ikona__hodiny {
+  margin-right: 10px;
+}
 @media screen and (min-width: 640px) {
   .hodnoty__pozadi {
     position: relative;
@@ -51,6 +57,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
+    padding: 0;
   }
 
   .hodnoty__seznam {
@@ -97,10 +104,11 @@
     top: 70px;
   }
 }
-//----------------------------konakta-----------------------//
-.kontakni-informace {
+//----------------------------kontakta-----------------------//
+.kontakt__obsah--uvod {
   display: none;
 }
+
 .oteviraci-doba {
   width: 220px;
   margin: 60px auto 40px;
@@ -118,12 +126,7 @@
   display: flex;
 }
 
-.ikona__navigace,
-.ikona__tel,
-.ikona__mail,
-.ikona__hodiny {
-  margin: 10px;
-}
+
 
 @media screen and (max-width: 639px) {
   .oteviraci-doba__tabulka {
@@ -132,7 +135,6 @@
 }
 
 @media screen and (min-width: 640px) {
-
   .kontakty__uvodni-strana {
     display: flex;
     align-items: center;
@@ -146,10 +148,10 @@
   }
 
   .oteviraci-doba {
-    width: 320px;}
+    width: 320px;
+  }
 
-    .oteviraci-doba__nadpis {
-      font-size: 24px;
-    }
-
+  .oteviraci-doba__nadpis {
+    font-size: 24px;
+  }
 }

@@ -1,0 +1,64 @@
+@use "desing";
+
+//--------------------Pro rodiče---------------------------//
+
+.nabizime {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.program-dne__tabulka--nadpis,
+.program-dne__tabulka--podnadpis {
+  text-align: left;
+}
+
+.program-dne__tabulka td{
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+@media screen and (min-width: 820px) {
+  .nabizime {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nabizime__seznam {
+    border-right: 1px solid desing.$c-primary;
+    margin-right: 30px;
+    padding-right: 10px;
+  }
+
+  .program-dne__tabulka {
+    margin-left: 30px;
+    padding-left: 10px;
+  }
+
+  .nabizime {
+    margin: 0 120px 70px 120px;
+  }
+}
+
+//--------------------ke stažení--------------------------//
+
+.stahovani > h1 {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.stahovani__article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  text-align: left;
+}
+.stahovani__article h5 {
+  text-align: center;
+}
+
+.stahovani a {
+  justify-self: start;
+  align-self: center;
+}
+
+@media screen and (min-width: 820px) {
+  .stahovani {
+    margin: 0 120px 70px 120px;
+  }
+}

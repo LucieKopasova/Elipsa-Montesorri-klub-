@@ -10,6 +10,7 @@
 @use "udalosti";
 @use "akce";
 @use "galerie";
+@use "rodice";
 
 // desing.$c-primary: #046175;
 // desing.$c-secondary:#0FBADF;
@@ -18,9 +19,7 @@
 // desing.$font-nadpis:"Pacifico", cursive;
 // desing.$font-text:"Lato", sans-serif;
 // desing.$bocni-okraj:30px;
-
 // intuitivnejsi box-sizing
-
 //-----Obecné nastavení----///
 html {
   box-sizing: border-box;
@@ -69,35 +68,4 @@ h4 {
 
 section {
   margin: desing.$bocni-okraj;
-}
-//--------------------Pro rodiče---------------------------//
-
-.nabizime {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-@media screen and (min-width: 820px) {
-  .nabizime {
-    grid-template-columns: 1fr 1fr;
-  }
-  .nabizime__seznam {
-    border-right: 1px solid desing.$c-primary;
-    margin-right: 30px;
-    padding-right: 10px;
-  }
-
-  .program-dne__tabulka {
-    margin-left: 30px;
-    padding-left: 10px;
-  }
-}
-
-//--------------------ke stažení--------------------------//
-.stahovani__article {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-}
-.stahovani__article h5 {
-  text-align: center;
 }
