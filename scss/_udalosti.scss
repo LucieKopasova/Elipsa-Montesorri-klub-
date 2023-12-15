@@ -23,7 +23,7 @@
   border-radius: 0 0 10px 70px;
   background-color: desing.$c-footer;
   border: 1px solid desing.$c-footer;
-  background-image: url(/images/akce/akce\ 1.jpg);
+  // background-image: url(/images/akce/akce\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -68,7 +68,7 @@
 @media screen and (min-width: 820px) {
   .archiv__udalosti,
   .udalosti {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   }
 
   .udalosti,

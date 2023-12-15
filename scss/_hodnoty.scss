@@ -2,12 +2,22 @@
 
 /* -----hodnoty-------------------------------- */
 
-.hodnoty {
-  padding-bottom: 30px;
+.nadpis__pozadi1 {
   background-image: url(/images/obsah-pozadi3.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  left: -10px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
   background-position: bottom;
+}
+
+.druha-polovina-stranky {
+  position: relative;
+  padding-top: 30px;
 }
 
 .hodnoty__pozadi {
@@ -33,7 +43,7 @@
 .ikona__hodiny {
   margin-right: 10px;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 820px) {
   .hodnoty__pozadi {
     position: relative;
     height: 300px;
@@ -125,8 +135,6 @@
 .oteviraci-doba__header {
   display: flex;
 }
-
-
 
 @media screen and (max-width: 639px) {
   .oteviraci-doba__tabulka {

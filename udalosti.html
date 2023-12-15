@@ -3,45 +3,28 @@ layout: layouts/stranka.njk
 title: Co je u nás nového
 ---
 
+
 <section class="udalosti">
-  <a href="/akce/cukrovi/" class="udalosti__karta udalosti__karta--1">
-    <div class="udalosti__popis">
-      <h4>Pod pokličkou</h4>
-      <h5>31.7-4.8.2024</h5>
+  {% for novinka in collections.novinky | reverse %}
 
-      <p>
-        I letos si děti mohou užít leto plné zabavy v našem přímetském táboře
-      </p>
+  <a
+    href="/akce/{{novinka.data.odkaz}}/"
+    class="udalosti__karta udalosti__karta--1"
+  >
+    <div class="udalosti__popis">
+      <h4>{{ novinka.data.title }}</h4>
+      <h5>{{ novinka.data.konani }}</h5>
+
+      <p>{{ novinka.data.perex }}</p>
     </div>
 
-    <div class="udalosti__obrazek"></div>
+    <div
+      class="udalosti__obrazek"
+      style="background-image: url('/images/akce/{{novinka.data.foto}}');"
+    ></div>
   </a>
 
-  <a href="/akce/indianskeleto/" class="udalosti__karta udalosti__karta--2">
-    <div class="udalosti__popis">
-      <h4>Pod pokličkou</h4>
-      <h5>31.7-4.8.2024</h5>
-
-      <p>
-        I letos si děti mohou užít leto plné zabavy v našem přímetském táboře
-      </p>
-    </div>
-
-    <div class="udalosti__obrazek"></div>
-  </a>
-
-  <a href="/akce/cukrovi/" class="udalosti__karta udalosti__karta--3">
-    <div class="udalosti__popis">
-      <h4>Pod pokličkou</h4>
-      <h5>31.7-4.8.2024</h5>
-
-      <p>
-        I letos si děti mohou užít leto plné zabavy v našem přímetském táboře
-      </p>
-    </div>
-
-    <div class="udalosti__obrazek"></div>
-  </a>
+  {% endfor %}
 </section>
 
 <div class="druha-polovina-stranky">
@@ -51,79 +34,24 @@ title: Co je u nás nového
 <section class="archiv">
   <h1>Archiv</h1>
   <div class="archiv__udalosti">
-    <a href="/archiv/cesta-do-praveku/"
-      ><div class="udalosti__karta udalosti__karta--2">
-        <div class="udalosti__popis">
-          <h4>Pod pokličkou</h4>
-          <h5>31.7-4.8.2024</h5>
+    {% for archiv in collections.archiv | reverse %}
+    <a
+      href="/galerie/"
+      class="udalosti__karta udalosti__karta--1"
+    >
+      <div class="udalosti__popis">
+        <h4>{{ archiv.data.title }}</h4>
+        <h5>{{ archiv.data.konani }}</h5>
 
-          <p>
-            I letos si děti mohou užít leto plné zabavy v našem přímetském
-            táboře
-          </p>
-        </div>
+        <p>{{ archiv.data.perex }}</p>
+      </div>
 
-        <div class="udalosti__obrazek"></div></div
-    ></a>
+      <div
+        class="udalosti__obrazek"
+        style="background-image: url('/images/akce/{{archiv.data.foto}}');"
+      ></div>
+    </a>
 
-    <a href="/archiv/cesta-do-praveku/"
-      ><div class="udalosti__karta udalosti__karta--2">
-        <div class="udalosti__popis">
-          <h4>Pod pokličkou</h4>
-          <h5>31.7-4.8.2024</h5>
-
-          <p>
-            I letos si děti mohou užít leto plné zabavy v našem přímetském
-            táboře
-          </p>
-        </div>
-
-        <div class="udalosti__obrazek"></div></div
-    ></a>
-
-    <a href="/archiv/cesta-do-praveku/"
-      ><div class="udalosti__karta udalosti__karta--2">
-        <div class="udalosti__popis">
-          <h4>Pod pokličkou</h4>
-          <h5>31.7-4.8.2024</h5>
-
-          <p>
-            I letos si děti mohou užít leto plné zabavy v našem přímetském
-            táboře
-          </p>
-        </div>
-
-        <div class="udalosti__obrazek"></div></div
-    ></a>
-
-    <a href="/archiv/cesta-do-praveku/"
-      ><div class="udalosti__karta udalosti__karta--2">
-        <div class="udalosti__popis">
-          <h4>Pod pokličkou</h4>
-          <h5>31.7-4.8.2024</h5>
-
-          <p>
-            I letos si děti mohou užít leto plné zabavy v našem přímetském
-            táboře
-          </p>
-        </div>
-
-        <div class="udalosti__obrazek"></div></div
-    ></a>
-
-    <a href="/archiv/cesta-do-praveku/"
-      ><div class="udalosti__karta udalosti__karta--2">
-        <div class="udalosti__popis">
-          <h4>Pod pokličkou</h4>
-          <h5>31.7-4.8.2024</h5>
-
-          <p>
-            I letos si děti mohou užít leto plné zabavy v našem přímetském
-            táboře
-          </p>
-        </div>
-
-        <div class="udalosti__obrazek"></div></div
-    ></a>
+    {% endfor %}
   </div>
 </section>

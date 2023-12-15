@@ -2,19 +2,18 @@
 
 /* -----druha polovina stranky pozadi ----------------------------- */
 .nadpis__pozadi2 {
-    background-image: url(/images/obsah-pozadi2.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-    left: -1px;
-    position: absolute;
-    top: -60px;
-    z-index: -1;
-  }
+  background-image: url(/images/obsah-pozadi2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  left: -1px;
+  position: absolute;
+  top: -60px;
+  z-index: -1;
+}
 
-  .druha-polovina-stranky {
-    position: relative;
-    padding-top: 30px;
-  }
-  
+.druha-polovina-stranky {
+  position: relative;
+  padding-top: 30px;
+}
