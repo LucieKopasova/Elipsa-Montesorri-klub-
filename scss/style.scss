@@ -91,16 +91,13 @@ section {
     margin-left: 30px;
     padding-left: 10px;
   }
-
 }
-
 
 //--------------------ke stažení--------------------------//
 .stahovani__article {
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
-
 }
-.stahovani__article h5{
-    text-align: center;
+.stahovani__article h5 {
+  text-align: center;
 }
