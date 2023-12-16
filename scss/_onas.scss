@@ -77,10 +77,15 @@
 }
 /* -----tym---------------------------- */
 
+.tym h1 {
+  margin-bottom: 30px;
+}
+
 .tym__profily {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 30px;
+  justify-items: center;
 }
 
 .tym__photo {

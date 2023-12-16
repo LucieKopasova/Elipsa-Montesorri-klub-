@@ -5,15 +5,22 @@
   background-image: url(/images/obsah-pozadi2.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 400px;
   width: 100%;
   left: -1px;
+  top: -50px;
   position: absolute;
-  top: -150px;
   z-index: -1;
 }
 
 .druha-polovina-stranky {
   position: relative;
   padding-top: 30px;
+}
+
+@media screen and (min-width: 820px) {
+  .nadpis__pozadi2 {
+    top: -150px;
+    height: 600px;
+  }
 }

@@ -42,6 +42,8 @@ header {
 
 .menu__toggler {
   cursor: pointer;
+  display: inline-block;
+  margin: 20px 20px 0 0;
 }
 
 .menu__list {
@@ -59,7 +61,7 @@ header {
 .menu__link {
   display: inline-block;
   color: #046175;
-  padding: 21px;
+  padding: 15px;
   text-decoration: none;
   min-width: 120px;
 }
@@ -369,11 +371,11 @@ header {
   background-image: url(/images/obsah-pozadi2.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 400px;
   width: 100%;
   left: -1px;
+  top: -50px;
   position: absolute;
-  top: -150px;
   z-index: -1;
 }
 
@@ -382,6 +384,12 @@ header {
   padding-top: 30px;
 }
 
+@media screen and (min-width: 820px) {
+  .nadpis__pozadi2 {
+    top: -150px;
+    height: 600px;
+  }
+}
 /* -----Kdo jsme ----------------------------- */
 .kdojsme__image {
   width: 220px;
@@ -453,10 +461,15 @@ header {
   }
 }
 /* -----tym---------------------------- */
+.tym h1 {
+  margin-bottom: 30px;
+}
+
 .tym__profily {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 30px;
+  justify-items: center;
 }
 
 .tym__photo {
@@ -593,6 +606,7 @@ header {
 
 .kontakt__mapa {
   margin: auto;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 640px) {
@@ -734,12 +748,14 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  justify-items: center;
 }
 
 .archiv__udalosti {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  justify-items: center;
 }
 
 .udalosti a,
@@ -783,11 +799,11 @@ header {
 
 @media screen and (min-width: 820px) {
   .udalosti__karta--novinky {
-    min-width: 830px;
+    min-width: 100%;
     min-height: 1170px;
   }
   .udalosti__obrazek--novinky {
-    min-width: 830px;
+    min-width: 100%;
     min-height: 1170px;
   }
   .udalosti__popis--novinky > p {

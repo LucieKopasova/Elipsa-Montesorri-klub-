@@ -46,12 +46,14 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  justify-items: center;
 }
 
 .archiv__udalosti {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  justify-items: center;
 }
 
 .udalosti a,
