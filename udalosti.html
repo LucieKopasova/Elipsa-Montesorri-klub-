@@ -3,14 +3,10 @@ layout: layouts/stranka.njk
 title: Co je u nás nového
 ---
 
-
 <section class="udalosti">
   {% for novinka in collections.novinky | reverse %}
 
-  <a
-    href="{{novinka.url}}"
-    class="udalosti__karta udalosti__karta--1"
-  >
+  <a href="{{novinka.url}}" class="udalosti__karta udalosti__karta--1">
     <div class="udalosti__popis">
       <h4>{{ novinka.data.title }}</h4>
       <h5>{{ novinka.data.konani }}</h5>
@@ -20,7 +16,7 @@ title: Co je u nás nového
 
     <div
       class="udalosti__obrazek"
-      style="background-image: url('/images/akce/{{novinka.data.foto}}');"
+      style="background-image: url('/images/galerie/{{novinka.data.foto}}');"
     ></div>
   </a>
 
@@ -35,10 +31,7 @@ title: Co je u nás nového
   <h1>Archiv</h1>
   <div class="archiv__udalosti">
     {% for archiv in collections.archiv | reverse %}
-    <a
-      href="/galerie/"
-      class="udalosti__karta udalosti__karta--1"
-    >
+    <a href="/galerie/" class="udalosti__karta udalosti__karta--1">
       <div class="udalosti__popis">
         <h4>{{ archiv.data.title }}</h4>
         <h5>{{ archiv.data.konani }}</h5>
