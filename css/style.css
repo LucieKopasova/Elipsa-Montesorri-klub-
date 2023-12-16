@@ -632,6 +632,12 @@ header {
   max-width: 100%;
 }
 
+.kontakt__mapa:active,
+.kontakt__mapa:focus,
+.kontakt__mapa:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (min-width: 640px) {
   .kontakt__uvod {
     display: grid;
