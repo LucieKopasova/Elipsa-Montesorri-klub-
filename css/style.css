@@ -224,7 +224,6 @@ header {
 }
 
 .hodnoty__pozadi {
-  width: 80%;
   margin: 40px auto 0;
 }
 
@@ -238,6 +237,9 @@ header {
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(3, 1fr);
   margin-left: 10%;
+  padding: 0;
+  list-style: none;
+  gap: 10px;
 }
 
 .ikona__navigace,
@@ -247,6 +249,11 @@ header {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 639px) {
+  .hodnoty__nadpis {
+    padding: 5px 0 0 0;
+  }
+}
 @media screen and (min-width: 820px) {
   .hodnoty__pozadi {
     position: relative;
@@ -495,6 +502,22 @@ header {
   text-align: center;
 }
 
+@media screen and (max-width: 639px) {
+  .tym__figure {
+    width: 300px;
+    padding: 5px;
+    height: 100%;
+  }
+  .tym__profily {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .tym__profil {
+    font-size: 14px;
+  }
+  .tym__figure img {
+    width: 150px;
+  }
+}
 @media screen and (min-width: 820px) {
   .nastym__viziky {
     display: grid;
@@ -856,6 +879,15 @@ header {
   border-bottom: 1px solid rgb(238, 238, 238);
 }
 
+.program-dne__tabulka .sloupec2 {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 639px) {
+  .nabizime {
+    font-size: 14px;
+  }
+}
 @media screen and (min-width: 820px) {
   .nabizime {
     grid-template-columns: 1fr 1fr;

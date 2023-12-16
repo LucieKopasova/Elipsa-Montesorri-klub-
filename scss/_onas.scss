@@ -110,7 +110,30 @@
   display: inline-block;
   text-align: center;
 }
+@media screen and (max-width: 639px) {
+  .tym__figure {
+    width: 300px;
+    padding: 5px;
+    height: 100%;
+  }
 
+  .tym__profily {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .tym__profil{
+    font-size: 14px;
+  }
+
+  .tym__figure img{
+    width: 150px;
+  }
+
+
+
+  
+
+}
 @media screen and (min-width: 820px) {
   .nastym__viziky {
     display: grid;

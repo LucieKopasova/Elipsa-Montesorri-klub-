@@ -21,7 +21,6 @@
 }
 
 .hodnoty__pozadi {
-  width: 80%;
   margin: 40px auto 0;
 }
 
@@ -35,6 +34,9 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(3, 1fr);
   margin-left: 10%;
+  padding: 0;
+  list-style: none;
+  gap: 10px;
 }
 
 .ikona__navigace,
@@ -43,6 +45,13 @@
 .ikona__hodiny {
   margin-right: 10px;
 }
+
+
+@media screen and (max-width: 639px) {
+  .hodnoty__nadpis {
+    padding: 5px 0 0 0;}
+}
+
 @media screen and (min-width: 820px) {
   .hodnoty__pozadi {
     position: relative;
