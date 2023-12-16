@@ -1,0 +1,38 @@
+---
+layout: layouts/hlavni-sablona.njk
+---
+
+<!-- vložíme hlavičku stránky -->
+{% include 'partials/header.njk' %}
+
+<!-- vložíme nadpis pozadi -->
+{% include 'partials/nadpis.njk' %}
+
+
+
+<main class="main">
+	<section class="galerie__popis">
+	  <div class="udalosti__karta udalosti__karta--1">
+		<div class="udalosti__popis">
+		  <h4>{{ title }}</h4>
+		  <h5>{{ konani }}</h5>
+  
+		  <p>
+			{{ perex }}
+		  </p>
+		</div>
+	  </div>
+	</section>
+  
+	<section class="galerie">
+	  {{ content | safe }}
+	</section>
+  </main>
+  
+
+
+<!-- vložíme patičku stránky -->
+{% include 'partials/footer.njk' %}
+
+<!----------------------------------------zkouška-------------------------------------->
+

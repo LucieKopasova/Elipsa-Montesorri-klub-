@@ -1,5 +1,5 @@
 ---
-layout: layouts/akce.njk
+layout: layouts/galerie.njk
 odkaz: indianskeleto
 title: Indianské leto
 konani: 31.7-4.8.2002

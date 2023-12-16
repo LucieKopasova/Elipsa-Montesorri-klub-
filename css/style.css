@@ -41,7 +41,7 @@ header {
 .menu__link {
   display: inline-block;
   color: #046175;
-  padding: 15px;
+  padding: 21px;
   text-decoration: none;
   min-width: 120px;
 }
@@ -351,11 +351,11 @@ header {
   background-image: url(/images/obsah-pozadi2.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 800px;
   width: 100%;
   left: -1px;
   position: absolute;
-  top: -60px;
+  top: -150px;
   z-index: -1;
 }
 
@@ -728,6 +728,7 @@ header {
 .archiv a {
   text-decoration: none;
   color: black;
+  height: 303px;
 }
 
 .archiv > h1 {
@@ -781,6 +782,12 @@ header {
     font-size: 24px;
   }
 }
+.novinky .udalosti__popis:hover,
+.novinky .udalosti__popis:active,
+.novinky .udalosti__popis:focus {
+  border: 1px dotted #046175;
+}
+
 .galerie__popis {
   margin-bottom: 0;
 }

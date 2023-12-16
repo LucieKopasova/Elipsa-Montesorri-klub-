@@ -1,5 +1,5 @@
 ---
-layout: layouts/akce.njk
+layout: layouts/galerie.njk
 odkaz: cukrovi
 title: Cukrovi
 konani: 4.12.2023

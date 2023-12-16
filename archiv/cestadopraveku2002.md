@@ -1,5 +1,5 @@
 ---
-layout: layouts/akce.njk
+layout: layouts/galerie.njk
 title: Cesta do pravěku
 odkaz: cestadopraveku2002
 konani: 3.8.2002

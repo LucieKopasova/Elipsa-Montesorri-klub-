@@ -8,7 +8,7 @@ title: Co je u nás nového
   {% for novinka in collections.novinky | reverse %}
 
   <a
-    href="/akce/{{novinka.data.odkaz}}/"
+    href="{{novinka.url}}"
     class="udalosti__karta udalosti__karta--1"
   >
     <div class="udalosti__popis">
@@ -48,7 +48,7 @@ title: Co je u nás nového
 
       <div
         class="udalosti__obrazek"
-        style="background-image: url('/images/akce/{{archiv.data.foto}}');"
+        style="background-image: url('/images/galerie/{{archiv.data.foto}}');"
       ></div>
     </a>
 
