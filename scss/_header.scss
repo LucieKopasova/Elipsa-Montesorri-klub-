@@ -1,5 +1,23 @@
 @use "desing";
 
+.herou {
+  position: relative;
+}
+
+.herou .slick-dots {
+  position: absolute;
+  bottom: 20px;
+}
+
+.herou .slick-dots li button:before {
+  font-size: 40px;
+}
+
+.herou .slick-dots li.slick-active button:before,
+.herou .slick-dots li button:before {
+  color: white;
+}
+
 header {
   display: flex;
   justify-content: space-between;

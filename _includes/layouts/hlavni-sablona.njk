@@ -17,13 +17,35 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/glide.core.min.css" />
     <link rel="stylesheet" href="/css/glide.theme.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css" />
   </head>
   <body>
     <!--
 		zde se vloží obsah šablony,
 		která používá tuto hlavní šablonu
-	-->
+	 -->
     {{ content | safe }}
     <script src="/fslightbox.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".herou").slick({
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots: true,
+        });
+      });
+    </script>
   </body>
 </html>
