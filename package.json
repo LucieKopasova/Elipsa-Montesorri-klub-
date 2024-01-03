@@ -1,11 +1,11 @@
 {
-  "name": "outdoor-obchod",
+  "name": "Elipsa-Montesorri-klub",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
-     "serve": "npx @11ty/eleventy --serve"
+    "serve": "npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "Lucie Kopasova",

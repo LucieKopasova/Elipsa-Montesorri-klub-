@@ -31,7 +31,7 @@ title: Co je u nás nového
   <h1>Archiv</h1>
   <div class="archiv__udalosti">
     {% for archiv in collections.archiv | reverse %}
-    <a href="/galerie/" class="udalosti__karta udalosti__karta--1">
+    <a href="{{archiv.url}}" class="udalosti__karta udalosti__karta--1">
       <div class="udalosti__popis">
         <h4>{{ archiv.data.title }}</h4>
         <h5>{{ archiv.data.konani }}</h5>
