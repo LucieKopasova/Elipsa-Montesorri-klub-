@@ -1,6 +1,7 @@
 ---
 layout: layouts/stranka.njk
 title: Co je u nás nového
+gallery: podzim
 ---
 
 <section class="galerie__popis">
@@ -16,42 +17,16 @@ title: Co je u nás nového
   </div>
 </section>
 
+
 <section class="galerie">
-  <a data-fslightbox="prvni" href="/images/galerie/Leto1.jpg">
-    <img class="photo" src="/images/galerie/nahledy/Leto1.jpg" alt="Fotka" />
-  </a>
+  {% for image in collections.galerie | reverse %} {% if image.gallery ===
+  gallery %}
 
-  <a data-fslightbox="prvni" href="/images/galerie/Leto2.jpg">
-    <img class="photo" src="/images/galerie/nahledy/Leto2.jpg" alt="Fotka"
-  /></a>
+  <div class="gallery-image">
+    <a data-fslightbox="prvni" href="/{{ image.path }}" class="gallery-link">
+      <img class="photo" src="/{{ image.path }}" />
+    </a>
+  </div>
 
-  <a data-fslightbox="prvni" href="/images/galerie/Leto3.jpg"
-    ><img class="photo" src="/images/galerie/nahledy/Leto3.jpg" alt="Fotka"
-  /></a>
-  <a data-fslightbox="prvni" href="/images/galerie/Leto1.jpg">
-    <img class="photo" src="/images/galerie/nahledy/Leto1.jpg" alt="Fotka"
-  /></a>
-  <a data-fslightbox="prvni" href="/images/galerie/Leto2.jpg">
-    <img class="photo" src="/images/galerie/nahledy/Leto2.jpg" alt="Fotka"
-  /></a>
-
-  <a data-fslightbox="prvni" href="/images/galerie/Leto3.jpg">
-    <img class="photo" src="/images/galerie/nahledy/Leto3.jpg" alt="Fotka" />
-  </a>
-
-  <a data-fslightbox="prvni" href="/images/galerie/Leto2.jpg">
-    <img class="photo" src="/images/galerie/nahledy/Leto2.jpg" alt="Fotka"
-  /></a>
-
-  <a data-fslightbox="prvni" href="/images/galerie/Leto3.jpg">
-    <img class="photo" src="/images/galerie/nahledy/Leto3.jpg" alt="Fotka" />
-  </a>
-
-  <a data-fslightbox="prvni" href="/images/galerie/Leto3.jpg">
-    <img class="photo" src="/images/galerie/nahledy/Leto3.jpg" alt="Fotka" />
-  </a>
-
-  <a data-fslightbox="prvni" href="/images/galerie/Leto1.jpg">
-    <img class="photo" src="/images/galerie/nahledy/Leto1.jpg" alt="Fotka" />
-  </a>
+  {% endif %} {% endfor %}
 </section>

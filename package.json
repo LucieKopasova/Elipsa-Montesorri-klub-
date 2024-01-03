@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve"
+     "serve": "npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "Lucie Kopasova",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "fast-glob": "^3.3.2"
   }
 }
