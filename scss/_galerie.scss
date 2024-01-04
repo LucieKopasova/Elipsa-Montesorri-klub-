@@ -12,12 +12,17 @@
   margin-top: 0px;
 }
 
+
 .photo {
+  object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 820px) {
   .galerie {
     grid-template-columns: repeat(auto-fill, 250px);
   }
+
+
 }

@@ -3,7 +3,7 @@
 /* -----hodnoty-------------------------------- */
 
 .nadpis__pozadi1 {
-  background-image: url(/images/obsah-pozadi3.svg);
+  background-image: url(/images/web_obrazky/pozadi/obsah-pozadi3.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
@@ -46,10 +46,10 @@
   margin-right: 10px;
 }
 
-
 @media screen and (max-width: 639px) {
   .hodnoty__nadpis {
-    padding: 5px 0 0 0;}
+    padding: 5px 0 0 0;
+  }
 }
 
 @media screen and (min-width: 820px) {
@@ -58,7 +58,7 @@
     height: 300px;
     width: 750px;
     margin-top: 80px;
-    background-image: url(/images/Elipsa.svg);
+    background-image: url(/images/web_obrazky/ikony/Elipsa.svg);
     background-position: center;
     background-repeat: no-repeat;
   }

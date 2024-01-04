@@ -5,6 +5,6 @@ konani: 4.12.2024
 perex: Pečeš, Peče, Pečeme a nejen sladké, ale i jiné dobroty
 foto: akce 1.jpg
 alt: Vanilkove rohlicky
-gallery:
+gallery: Cukrovi20241204
 tags: ['novinky']
 ---
