@@ -88,7 +88,6 @@ header {
 
 @media screen and (max-width: 819px) {
   .menu {
-    width: 240px;
     font-size: 20px;
   }
   .menu__list {
