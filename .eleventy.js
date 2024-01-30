@@ -13,6 +13,9 @@ module.exports = function (eleventyConfig) {
   // Zkopírovat všechny *.js soubory na stejné umístění do _site
   eleventyConfig.addPassthroughCopy("js");
 
+  // Netlify CMS
+  eleventyConfig.addPassthroughCopy("admin");
+
   //Nahravání galerie//
 
   const galerie = fastglob.sync(["images/galerie/*/*.*", "!_site"]);

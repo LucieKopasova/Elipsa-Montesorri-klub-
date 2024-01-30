@@ -1,0 +1,20 @@
+
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "images/galerie/uploads"
+collections:
+  - name: "novinka" 
+    label: "Novinky"
+    folder: "akce"
+    create: true 
+    slug: "{{slug}}" 
+    fields: # Pole, která budeme editovat. Obvykle data uložená ve front matter
+      - {label: "Šablona", name: "layout", widget: "hidden", default: "layouts/akce.njk"}
+      - {label: "Titulek", name: "title", widget: "string"}
+      - {label: "Datum konání", name: "konani", widget: "date"}
+      - {label: "Perex", name: "perex", widget: "string"}
+      - {label: "Obrázek", name: "foto", widget: "image", required: false }
+      - {label: "Název galerie", name: "gallery", widget: "string", default: cesta_do_pravěku20240803 }
+      - {label: "Tags", name: "tags", widget: "string", default: "novinky/archiv"}
+
