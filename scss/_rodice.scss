@@ -12,29 +12,23 @@
   text-align: left;
 }
 
-.program-dne__tabulka td{
+.program-dne__tabulka td {
   border-bottom: 1px solid rgb(238, 238, 238);
-
 }
 
-.program-dne__tabulka .sloupec2{
+.program-dne__tabulka .sloupec2 {
   padding-left: 10px;
 }
 
-@media screen and (max-width: 639px){
-  .nabizime{
-    font-size: 14px
+@media screen and (max-width: 639px) {
+  .nabizime {
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 820px) {
   .nabizime {
-    grid-template-columns: 1fr 1fr;
-  }
-  .nabizime__seznam {
-    border-right: 1px solid desing.$c-primary;
-    margin-right: 30px;
-    padding-right: 10px;
+    grid-template-columns: 1fr;
   }
 
   .program-dne__tabulka {
