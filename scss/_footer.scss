@@ -3,7 +3,7 @@
 .footer {
   background-color: desing.$c-footer;
   height: 145px;
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   font-size: 24px;
@@ -25,6 +25,8 @@
 .footer__socsiti {
   display: flex;
 }
+
+.footer__ikona
 
 @media screen and (max-width: 639px) {
   .footer {
