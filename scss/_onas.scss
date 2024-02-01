@@ -24,7 +24,6 @@
 
 .kdojsme__zkratka h2 {
   margin: 0;
-  text-align: top;
 }
 
 @media screen and (min-width: 820px) {
@@ -33,8 +32,6 @@
   }
   .kdojsme__obsah {
     display: grid;
-
-    
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(2, auto);
   }

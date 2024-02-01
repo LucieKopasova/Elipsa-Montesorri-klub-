@@ -12,21 +12,22 @@
 
 .footer__navigace {
   display: flex;
+  align-items: center;
 }
 
 .footer__kontakt {
   display: flex;
+  align-items: center;
 }
 
 .footer__ikona {
   margin: 10px;
+  height: auto;
 }
 
 .footer__socsiti {
   display: flex;
 }
-
-.footer__ikona
 
 @media screen and (max-width: 639px) {
   .footer {

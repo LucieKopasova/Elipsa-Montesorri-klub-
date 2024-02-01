@@ -168,14 +168,17 @@ header {
 
 .footer__navigace {
   display: flex;
+  align-items: center;
 }
 
 .footer__kontakt {
   display: flex;
+  align-items: center;
 }
 
 .footer__ikona {
   margin: 10px;
+  height: auto;
 }
 
 .footer__socsiti {
@@ -414,6 +417,10 @@ header {
   max-width: 1170px;
   gap: 20px;
   margin: auto;
+}
+
+.kdojsme__zkratka h2 {
+  margin: 0;
 }
 
 @media screen and (min-width: 820px) {
